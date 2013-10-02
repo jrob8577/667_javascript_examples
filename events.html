@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <title>Events Example</title>
+    <style type="text/css">
+      div.box {
+        width: 400px;
+        background-color: #369;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      input {
+        display: block;
+        margin-bottom: 20px;
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <p>Google for a complete listing of possible events...</p>
+    
+    <div class="box" onmouseover="this.innerText='blarg'" onmouseout="this.innerText='Not Blarg'">Not Blarg</div>
+    <div class="box" onmousedown="this.innerText='let go, let go!'" onmouseup="this.innerText='Thanks!!'">Pay no Attention to me</div>
+
+    <input type="text" id="an_input" onchange="this.value=this.value.toUpperCase()" />
+  </body>
+</html>
