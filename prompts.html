@@ -7,7 +7,11 @@
       alert("I'm about to prompt you.");
       result = prompt("Enter a thing: ", "A default thing");
 
-      document.write(result);
+      document.write(result + "<br />");
+
+      result = confirm("Should I do this thing?");
+      
+      document.write("I " + ( result ? "should" : "should not" ) + " do the thing.");
     </script>
   </body>
 </html>
